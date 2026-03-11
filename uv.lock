@@ -596,6 +596,25 @@ wheels = [
 ]
 
 [[package]]
+name = "deepteam"
+version = "1.0.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "deepeval" },
+    { name = "grpcio" },
+    { name = "openai" },
+    { name = "pyyaml" },
+    { name = "requests" },
+    { name = "tabulate" },
+    { name = "tqdm" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/31/4a/908f66e0e2ddfb0c3703b947dca8aa9be0c3af1c7abc4c88285ea009cf7b/deepteam-1.0.6.tar.gz", hash = "sha256:0b215c0a4df438783e6b18fdc7c98be08eefbc4eb65c75bff3a79f715ba2bc1e", size = 376677, upload-time = "2026-03-03T05:55:25.731Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8f/5c/b2a206b1e90f59af5a3b9c0eb31351597f216c31691fa50d603c40eec409/deepteam-1.0.6-py3-none-any.whl", hash = "sha256:87412c27e1cc64952ab9930e29f3f80dcd998b9b05d8d332a84040d7411a5549", size = 681559, upload-time = "2026-03-03T05:55:23.979Z" },
+]
+
+[[package]]
 name = "dill"
 version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1302,10 +1321,12 @@ dependencies = [
     { name = "anthropic" },
     { name = "datasets" },
     { name = "deepeval" },
+    { name = "deepteam" },
     { name = "langchain" },
     { name = "langchain-community" },
     { name = "langchain-openai" },
     { name = "langchain-pymupdf4llm" },
+    { name = "pandas" },
     { name = "pdfminer-six" },
     { name = "pymupdf" },
     { name = "python-dotenv" },
@@ -1319,10 +1340,12 @@ requires-dist = [
     { name = "anthropic", specifier = ">=0.84.0" },
     { name = "datasets", specifier = ">=4.6.1" },
     { name = "deepeval", specifier = ">=3.8.9" },
+    { name = "deepteam", specifier = ">=1.0.6" },
     { name = "langchain", specifier = ">=1.2.10" },
     { name = "langchain-community", specifier = ">=0.4.1" },
     { name = "langchain-openai", specifier = ">=1.1.10" },
     { name = "langchain-pymupdf4llm", specifier = ">=0.5.0" },
+    { name = "pandas", specifier = ">=3.0.1" },
     { name = "pdfminer-six", specifier = "==20221105" },
     { name = "pymupdf", specifier = ">=1.27.1" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
